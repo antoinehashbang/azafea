@@ -18,7 +18,7 @@ Information about the Endless OS image installed on the computer.
 
 :UUID name: TODO
 
-.. versionadded:: TODO
+.. versionadded:: 4.0.0
 
 Computer Information
 ~~~~~~~~~~~~~~~~~~~~
@@ -27,7 +27,7 @@ Information about computer hardware.
 
 :UUID name: TODO
 
-.. versionadded:: TODO
+.. versionadded:: 4.0.0
 
 Startup Finished
 ~~~~~~~~~~~~~~~~
@@ -216,8 +216,9 @@ See `T28741 <https://phabricator.endlessm.com/T28741#810046>`_ and `#101
 <https://github.com/endlessm/azafea/pull/101#discussion_r402610338>`_.
 
 The fields in the payload have the same semantics as the properties in the
-`AppFilter <https://gitlab.freedesktop.org/pwithnall/malcontent/-/blob/master/\
-accounts-service/com.endlessm.ParentalControls.AppFilter.xml>` interface.
+`AppFilter
+<https://gitlab.freedesktop.org/pwithnall/malcontent/-/blob/master/accounts-service/com.endlessm.ParentalControls.AppFilter.xml>`_
+interface.
 
 :UUID name: ``MCT_PARENTAL_CONTROLS_EVENT`` in malcontent and gnome-initial-setup
 
@@ -237,21 +238,21 @@ Time Spent In Session
 
 Time spent in session by all computer users for given .
 
-.. versionadded:: TODO
+.. versionadded:: 4.0.0
 
 Time Foreground App Is Opened
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Duration of an app open during last day.
 
-.. versionadded:: TODO
+.. versionadded:: 4.0.0
 
 Different Users
 ~~~~~~~~~~~~~~~
 
 Number of different users who have logged in during last week.
 
-.. versionadded:: TODO
+.. versionadded:: 4.0.0
 
 
 Deprecated Events
@@ -518,7 +519,7 @@ See `the comprehensive list of status codes
 Social Bar Is Visible
 ~~~~~~~~~~~~~~~~~~~~~
 
-Removed in TODO.
+Removed in 4.0.0.
 
 We record when the social bar is made visible to the user and when it is no
 longer visible. Basically, it corresponds to the user clicking on the social
@@ -531,7 +532,7 @@ bar icon.
 Desktop Searches
 ~~~~~~~~~~~~~~~~
 
-Removed in TODO.
+Removed in 4.0.0.
 
 We record searches made from the desktop search bar.
 
@@ -554,7 +555,7 @@ We record searches made from the desktop search bar.
 Knowledge App Search
 ~~~~~~~~~~~~~~~~~~~~
 
-Removed in TODO.
+Removed in 4.0.0.
 
 We record the search terms used for searching within the knowledge apps along
 with the app ID of the knowledge app. (We also record the search term used when
@@ -571,7 +572,7 @@ a user performed a desktop search and clicked through to a knowledge app.)
 Link Shared from Knowledge App
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Removed in TODO.
+Removed in 4.0.0.
 
 Reported when a user shares a link from one of our content apps on a social network.
 
@@ -598,7 +599,7 @@ See `T18524 <https://phabricator.endlessm.com/T18524>`_.
 Knowledge App – Article Open/Close
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Removed in TODO.
+Removed in 4.0.0.
 
 We record when an article is opened or closed in a knowledge app. We record the
 ID of the content, the entry point (whether the article was accessed via
@@ -622,7 +623,7 @@ See `T18516 <https://phabricator.endlessm.com/T18516>`_.
 Hack Toolbox - Code View Error - Hack Episode 1
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Removed in TODO.
+Removed in 4.0.0.
 
 - Since: 3.5.3
 - UUID: ``e98aa2b8-3f11-4a25-b8e9-b10a635df121``
@@ -651,7 +652,7 @@ See `T24429 <https://phabricator.endlessm.com/T24429>`_.
 Hack Clubhouse - Quest
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Removed in TODO.
+Removed in 4.0.0.
 
 - Since: 3.7.4
 - UUID: ``50aebb1b-7a93-4caf-8698-3a601a0fc0f6``
@@ -674,7 +675,7 @@ See `T28004 <https://phabricator.endlessm.com/T28004>`_.
 Uptime
 ~~~~~~
 
-Removed in TODO.
+Removed in 4.0.0.
 
 Total length of time the computer has been powered on and total number of boots.
 
@@ -698,7 +699,7 @@ UUID was ``005096c4-9444-48c6-844b-6cb693c15235`` before 2.5.2.
 Shell App Is Open
 ~~~~~~~~~~~~~~~~~
 
-Removed in TODO.
+Removed in 4.0.0.
 
 An application opens and closes.
 
@@ -713,7 +714,7 @@ of interest to non-developers.
 User Is Logged In
 ~~~~~~~~~~~~~~~~~
 
-Removed in TODO.
+Removed in 4.0.0.
 
 A user logs in and logs out to Endless OS.
 
@@ -737,7 +738,7 @@ UUID was called ``EMTR_EVENT_USER_IS_LOGGED_IN``
 Network ID
 ~~~~~~~~~~
 
-Removed in TODO.
+Removed in 4.0.0.
 
 A change in the default route happens after the network connectivity has changed.
 
@@ -754,7 +755,7 @@ See `T16934 <https://phabricator.endlessm.com/T16934>`_.
 Cache Is Corrupt
 ~~~~~~~~~~~~~~~~
 
-Removed in TODO.
+Removed in 4.0.0.
 
 Cache has been found to be corrupt and was reset.
 
@@ -775,7 +776,7 @@ afterwards.
 Cache Metadata Is Corrupt
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Removed in TODO.
+Removed in 4.0.0.
 
 Cache metadata is corrupt and was reset, any cached metrics were discarded.
 
@@ -798,7 +799,7 @@ See `T19953 <https://phabricator.endlessm.com/T19953>`_.
 Cache Has Invalid Elements
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Removed in TODO.
+Removed in 4.0.0.
 
 Some invalid cache elements were found.
 
@@ -819,7 +820,7 @@ afterwards.
 Discovery Feed Clicked
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Removed in TODO.
+Removed in 4.0.0.
 
 Something is clicked on the Discovery Feed, including content which is not "clickable".
 
@@ -843,7 +844,7 @@ one of:
 Discovery Feed Closed
 ~~~~~~~~~~~~~~~~~~~~~
 
-Removed in TODO.
+Removed in 4.0.0.
 
 Something is clicked on the Discovery Feed, including content which is not "clickable".
 
@@ -867,7 +868,7 @@ one of:
 Discovery Feed Opened
 ~~~~~~~~~~~~~~~~~~~~~
 
-Removed in TODO.
+Removed in 4.0.0.
 
 The Discovery Feed is open.
 
@@ -883,7 +884,7 @@ popular in and how users generally open the feed.
 Disk Space Extra
 ~~~~~~~~~~~~~~~~
 
-Removed in TODO.
+Removed in 4.0.0.
 
 Total, used and free disk space for ``/var/endless-extra``.
 
@@ -898,7 +899,7 @@ See `T18445 <https://phabricator.endlessm.com/T18445>`_.
 Entered Demo Mode
 ~~~~~~~~~~~~~~~~~
 
-Removed in TODO.
+Removed in 4.0.0.
 
 The systems enters demo mode.
 
@@ -918,7 +919,7 @@ See `T18983 <https://phabricator.endlessm.com/T18983>`_.
 Endless Application Unmaximized
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Removed in TODO.
+Removed in 4.0.0.
 
 An in-house application is unmaximized for the first time in each run.
 
@@ -931,7 +932,7 @@ We record a metric with the application ID.
 Hack Clubhouse Achievement
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Removed in TODO.
+Removed in 4.0.0.
 
 Achievement reached in the Hack Clubhouse.
 
@@ -944,7 +945,7 @@ See `T28004 <https://phabricator.endlessm.com/T28004>`_.
 Hack Clubhouse Achievement Points
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Removed in TODO.
+Removed in 4.0.0.
 
 Points earned in the Hack Clubhouse.
 
@@ -957,7 +958,7 @@ See `T28004 <https://phabricator.endlessm.com/T28004>`_.
 Hack Clubhouse Change Page
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Removed in TODO.
+Removed in 4.0.0.
 
 Page changed in the Hack Clubhouse.
 
@@ -970,7 +971,7 @@ See `T28004 <https://phabricator.endlessm.com/T28004>`_.
 Hack Clubhouse Enter Pathway
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Removed in TODO.
+Removed in 4.0.0.
 
 Pathway entered in the Hack Clubhouse.
 
@@ -983,7 +984,7 @@ See `T28004 <https://phabricator.endlessm.com/T28004>`_.
 Hack Clubhouse Mode
 ~~~~~~~~~~~~~~~~~~~
 
-Removed in TODO.
+Removed in 4.0.0.
 
 Hack mode changed in the Hack Clubhouse.
 
@@ -996,7 +997,7 @@ See `T28501 <https://phabricator.endlessm.com/T28501>`_.
 Hack Clubhouse News Quest Link
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Removed in TODO.
+Removed in 4.0.0.
 
 Quest link clicked in the Hack Clubhouse news.
 
@@ -1009,7 +1010,7 @@ See `T29192 <https://phabricator.endlessm.com/T29192>`_.
 Hack Clubhouse Progress
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Removed in TODO.
+Removed in 4.0.0.
 
 Progress updated in the Hack Clubhouse.
 
@@ -1022,7 +1023,7 @@ See `T28004 <https://phabricator.endlessm.com/T28004>`_.
 Location
 ~~~~~~~~
 
-Removed in TODO.
+Removed in 4.0.0.
 
 The user’s location at city-level granularity.
 
@@ -1046,7 +1047,7 @@ longitude, altitude if known, and accuracy of the location estimate.
 Missing Codec
 ~~~~~~~~~~~~~
 
-Removed in TODO.
+Removed in 4.0.0.
 
 A GStreamer-based application tries to install a missing codec.
 
@@ -1057,7 +1058,7 @@ A GStreamer-based application tries to install a missing codec.
 Monitor Connected
 ~~~~~~~~~~~~~~~~~
 
-Removed in TODO.
+Removed in 4.0.0.
 
 A display is connected (e.g. computer monitor, television) to the machine.
 
@@ -1072,7 +1073,7 @@ UUID was ``566adb36-7701-4067-a971-a398312c2874`` before 2.1.7.
 Monitor Disconnected
 ~~~~~~~~~~~~~~~~~~~~
 
-Removed in TODO.
+Removed in 4.0.0.
 
 A display is disconnected (e.g. computer monitor, television) from the machine.
 
@@ -1087,7 +1088,7 @@ UUID was ``ce179909-dacb-4b7e-83a5-690480bf21eb`` before 2.1.7.
 ShellAppAddedToDesktop
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Removed in TODO.
+Removed in 4.0.0.
 
 Shell application is added to desktop.
 
@@ -1103,7 +1104,7 @@ Shell application is added to desktop.
 Shell App Removed From Desktop
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Removed in TODO.
+Removed in 4.0.0.
 
 Shell application is removed from desktop.
 
@@ -1119,7 +1120,7 @@ Shell application is removed from desktop.
 Underscan Enabled
 ~~~~~~~~~~~~~~~~~
 
-Removed in TODO.
+Removed in 4.0.0.
 
 Underscan is enabled on a monitor.
 
@@ -1130,7 +1131,7 @@ Underscan is enabled on a monitor.
 Windows License Tables
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Removed in TODO.
+Removed in 4.0.0.
 
 ACPI tables are present on the system, at startup.
 
@@ -1155,7 +1156,7 @@ See `T18296 <https://phabricator.endlessm.com/T18296>`_.
 Updater Branch Selected
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Removed in TODO.
+Removed in 4.0.0.
 
 An eos-updater branch has been selected.
 
@@ -1166,7 +1167,7 @@ An eos-updater branch has been selected.
 Control Center Panel Opened
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Removed in TODO.
+Removed in 4.0.0.
 
 A panel is open in the control center.
 
@@ -1177,7 +1178,7 @@ A panel is open in the control center.
 Control Center Automatic Updates
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Removed in TODO.
+Removed in 4.0.0.
 
 Automatic updates settings have changed.
 
@@ -1212,199 +1213,3 @@ events.
 - `Daemon tests <https://github.com/endlessm/eos-event-recorder-daemon/blob/efc6bb0e1283236ee4fe9c3d7fc992c4a53436d8/tests/daemon/test-daemon.c#L51>`_
 
   - ``350ac4ff-3026-4c25-9e7e-e8103b4fd5d8``
-
-
-Timestamp Algorithm
--------------------
-
-This chapter is not intended to be formal documentation but rather a primer to
-understanding how the timestamp algorithm for the metrics system works. As
-such, some simplifications are made at the expense of accuracy.
-
-Analogies
-~~~~~~~~~
-
-Analogy to help understand the problem of determining correct event timestamps
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-A tourist just arrived in San Francisco and wanted to visit the beautiful
-sights and tourist spots in the city. Unfortunately, instead of bringing his
-watch, he accidentally brought his stopwatch. Not to be deterred, right before
-he started touring the city, he started his stopwatch.
-
-Along the way, the man sees many beautiful sights, including a fireworks
-display, an awesome office on the 3rd floor of 512 2nd Street, and sunset at
-the Golden Gate Bridge. He records all of these events in his journal, writing
-down the event and the time on his stopwatch.
-
-Eventually, he gets tired and decides to catch a bus ride North all the way to
-Seattle. He hops on the bus by the San Francisco Ferry Building, and right
-before the bus leaves, he stops his stopwatch and checks the time on the clock
-tower on the building. Right as he writes down the current date and time, and
-the time on his stopwatch, the bus leaves.
-
-Long after the bus has departed, he starts talking with the passenger sitting
-next to him. The passenger informs the tourist that the clock tower is
-sometimes inaccurate.
-
-Not wishing to repeat his mistake of trusting a fallible clock tower, the
-tourist consults an atomic clock upon arriving in Seattle. He then realizes
-that he forgot to time the trip from San Francisco to Seattle, but he sighs in
-relief when he remembers that his train ticket lists the estimated duration.
-
-He checks into a hotel and starts going through his journal. He tries to
-convert the stopwatch times of each San Francisco event to the time the event
-happened. What can he do to make the times he calculates as accurate as
-possible?
-
-Analogy to help visualize the problem of calculating correct timestamps
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-All of the relative timestamps of events are correct relative to each other.
-However, the problem is placing the groups of events on the right scale.
-
-Imagine moving a sliding weight on a scale. The problem is finding the right
-position of the weight on the scale where the scale is balanced. The weight is
-analogous to a group of events with relative timestamps. The scale is analogous
-to a timeline. The problem is finding the right position on the timeline where
-the events occurred.
-
-Client Side
-~~~~~~~~~~~
-
-Suppose we want to find out what time an event occurred.
-
-Naive Attempt
-+++++++++++++
-
-- Definition: **Absolute Timestamp** - Time elapsed since the Unix Epoch in
-  1970 -- at least according to the system clock.
-
-Well, this should be simple, right? We will just use an **absolute timestamp**,
-package it with the event, and pat ourselves on the back! Let's see what
-happens in this case:
-
-```
-User boots up system at Noon (Day X).
-User plays Akintu for 1 hour. It is now 1:00 PM (Day X).
-User sets the system clock forward one day, tricking the metrics system. It is now 1:00 PM (Day X + 1).
-Any events recorded now will appear to have occurred in the future.
-(The previous Akintu event would still be correct as it was recorded before the clock change)
-```
-
-This problem also exists without setting the system clock to a bogus time. If
-the user's computer is offline for a long time, his or her system clock will
-slowly drift away from true time. This could end up being minutes off in
-extreme cases of no connectivity. We cannot trust the **absolute timestamps**
-alone.
-
-- Definition: **Relative Timestamp** - Time elapsed since the OS booted up.
-
-We cannot use purely **relative timestamps** either, as that wouldn't be able
-to track the time while the computer is powered off. Rather we'll need a
-combination of the two as well as something we call the **boot offset**.
-
-- Definition: **Boot Offset** - The value to add to any relative timestamp
-  within the current boot to correct (or "true up") to an accurate time.
-
-Smart Algorithm
-+++++++++++++++
-
-(This algorithm is based on the `Kurt Truth Premise <https://www.youtube.com/watch?v=dQw4w9WgXcQ>`_.)
-
-So we need some way to track the time that isn't vulnerable to user-changes to
-the system clock or clock drift, but doesn't neglect to track time spent
-offline. Turns out we need a **boot offset** to tell us how much to adjust our
-events' timestamps by. This will make use of both a **relative time** and an
-**absolute time** combined with some logging to persistent storage on shutdown
-and computation on start up.
-
-We will use the following quantities:
-
-- Boot Offset (What we ultimately add to correct the events' relative timestamps.)
-- Stored Boot Offset (The previously written boot offset.)
-- Current Relative Time (How long the OS has been running for today. When computed at startup, will be about 0.)
-- Stored Relative Time (How long the OS was running for the previous boot.)
-- Current Absolute Time (What time the system clock says it is *right now*.)
-- Stored Absolute Time (What time the system clock said it was during our last shutdown.)
-
-In the following formula::
-
-  Boot Offset = Stored Boot Offset + (Stored Relative Time - Current Relative Time) + (Current Absolute Time - Stored Absolute Time)
-
-Let us give it a shot::
-
-  User starts up at noon (Day X).
-    -- Absolute Time = noon (Day X) Define this quantity as 0 for easier math!
-    -- Relative Time = 0
-    -- Boot Offset = 0 (When no boot offset exists, it is set to 0.)
-  User learns about Racket until 1:00 PM (Day X).
-  User powers off machine.
-    -- Relative Time STORED --> 1
-    -- Absolute Time STORED --> 1
-  User powers on machine at 2:00 PM (Day X).
-    -- Absolute Time = 2
-    -- Stored Absolute Time = 1
-    -- Relative Time = 0
-    -- Stored Relative Time = 1
-    -- Stored Boot Offset = 0
-    -- New Boot Offset = 0 + (1 - 0) + (2 - 1) = 2
-  User hooks up dance pads and plays Stepmania until 3:00 PM (Day X).
-  User sets system clock back one day. It is now 3:00 PM (Day X - 1) according to the absolute clock.
-  User reads up on the "Time Cube" until 4:00 PM (Day X in reality, Day X - 1 according to the absolute clock).
-  User powers off machine.
-    -- Relative Time STORED --> 2
-    -- Absolute Time STORED --> -20
-  User powers on machine at 5:00 PM (Day X, Day X - 1 according to the absolute clock).
-    -- Absolute Time = -19
-    -- Stored Absolute Time = -20
-    -- Relative Time = 0
-    -- Stored Relative Time = 2
-    -- Stored Boot Offset = 2
-    -- New Boot Offset = 2 + (2 - 0) + (-19 - -20) = 5
-
-As you can see, the boot offsets are correctly determining the number of hours
-since the true first boot. There are some subtleties that are being ignored
-such as why we bother with the "current" relative time at all, but the intent
-is to illustrate the motivation for and essentials of the algorithm.
-
-Server Side
-~~~~~~~~~~~
-
-The metrics system packages bundles of events/metrics together into a **network
-request** and sends it off to the server(s) when a connection is detected. This
-network request has a couple of timestamps of its own.
-
-- Definition: **Network Request Relative Timestamp** - Time elapsed between the
-  "origin" boot and when the network request was created. Was also corrected
-  via the client algorithm.
-- Definition: **Network Request Absolute Timestamp** - The system clock's
-  estimation of when the network request was created (in terms of the Unix
-  Epoch, as before.)
-- Definition: **Metric Corrected Relative Timestamp** - The result of our
-  client-side algorithm to generate the time a metric occurred, relative to the
-  "origin" boot.
-
-When the server receives a network request, it will first examine the **network
-request absolute time** to see if it varies significantly from its own
-(trusted) clock. If it does, some special action will be taken with that
-request, such as putting it in its own special table or attempting to correct
-the timestamp in some fashion.
-
-What we want is the **metric corrected absolute timestamp**.
-
-- Definition: **Metric Corrected Absolute Timestamp** - The result of our
-  server-side algorithm to generate the actual real-world time a metric
-  occurred.
-- Definition: **Origin Boot Absolute Time** - The time at which the "first"
-  boot occurred on a system. In a perfect world, this is always the first boot
-  of the system ever.
-
-Assuming it passes this sanity check, the server then unpacks the network
-request and examines each **metric corrected relative timestamp**. The server
-does the following::
-
-  … Assuming we've passed the sanity check …
-  Origin Boot Absolute Time = Network Request Absolute Time - Network Request Relative Time
-  For each metric in request:
-      Metric Corrected Relative Timestamp = Origin Boot Absolute Time + Metric Corrected Relative Timestamp
