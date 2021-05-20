@@ -22,14 +22,20 @@ Global Structure
 
 The format is entirely little-endian. In order, its elements are:
 
-Network Send Number
-+++++++++++++++++++
+Relative Timestamp
+++++++++++++++++++
 
-- 32-bit signed integer
-- GVariant symbol: ``i``
-- Begins at 0 on each client and goes up by 1 each time we attempt a metrics
-  network upload
-- Does not go up on network retries
+- 64 bit signed integer
+- GVariant symbol: ``x``
+- See: http://linux.die.net/man/3/clock_gettime
+
+Absolute Timestamp
+++++++++++++++++++
+
+- 64 bit signed integer
+- GVariant symbol: ``x``
+- Nanoseconds since the Unix epoch
+- See: http://linux.die.net/man/3/clock_gettime
 
 Image
 +++++
@@ -69,7 +75,7 @@ Singular Metrics
 
 - Array of singular metrics
 - See `Singular Metric`_
-- GVariant symbol: ``a(aysxxmv)``
+- GVariant symbol: ``a(aysxmv)``
 
 Aggregate Metrics
 +++++++++++++++++
@@ -81,7 +87,7 @@ Aggregate Metrics
 Total GVariant Format String
 ++++++++++++++++++++++++++++
 
-All together it should look like: ``(isa{ss}ya(aysxxmv)a(aysyxxmv))``.
+All together it should look like: ``(xxsa{ss}ya(aysxmv)a(aysyxxmv))``.
 
 Singular Metric
 ~~~~~~~~~~~~~~~
@@ -113,14 +119,6 @@ Relative Timestamp
 - 64 bit signed integer
 - GVariant symbol: ``x``
 - Nanoseconds since the last computer boot
-- See: http://linux.die.net/man/3/clock_gettime
-
-Absolute Timestamp
-++++++++++++++++++
-
-- 64 bit signed integer
-- GVariant symbol: ``x``
-- Nanoseconds since the Unix epoch
 - See: http://linux.die.net/man/3/clock_gettime
 
 Auxiliary Payload
@@ -177,7 +175,6 @@ Absolute Timestamp
 - GVariant symbol: ``x``
 - Nanoseconds since the Unix epoch
 - Beginning of the period, with aggregation done using user’s computer time
-- See: http://linux.die.net/man/3/clock_gettime
 
 Count
 +++++
@@ -260,15 +257,14 @@ Version 3
 - URI Format: ``https://production.metrics.endlessm.com/3/<SHA-512-Hash>``
 - No compression
 - Little Endian
-- GVariant Payload Format: ``(isa{ss}bba(aysxmv)a(aysyxxmv))``
+- GVariant Payload Format: ``(xxsa{ss}ya(aysxmv)a(aysyxxmv))``
+- Removed "network send number".
 
 Contents:
 
 - Network Send Number
-- Relative and Absolute Timestamp for Singular Events, Absolute Timestamp for
-  Aggregate Events
 - Channel (image, site, dualboot, live)
 - Singular Events (Event ID, OS Version, Relative Timestamp, Absolute
   Timestamp, Auxiliary Payload)
-- Aggregate Events (Event ID, OS Version, Period, Absolute Timestamp, Count,
+- Aggregate Events (Event ID, OS Version, Period, Relative Timestamp, Count,
   Auxiliary Payload)
