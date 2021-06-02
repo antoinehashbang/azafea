@@ -30,7 +30,7 @@ from ..utils import get_child_values, get_event_datetime, get_variant
 
 log = logging.getLogger(__name__)
 
-VARIANT_TYPE = GLib.VariantType('(isa{ss}ya(aysxxmv)a(aysyxxmv))')
+VARIANT_TYPE = GLib.VariantType('(xxsa{ss}ya(aysxxmv)a(aysyxxmv))')
 
 SINGULAR_EVENT_MODELS: Dict[str, Type['SingularEvent']] = {}
 AGGREGATE_EVENT_MODELS: Dict[str, Type['AggregateEvent']] = {}
@@ -139,8 +139,8 @@ class MetricEvent(Base, metaclass=MetricMeta):
     def __init__(self, payload: GLib.Variant, **kwargs: Dict[str, Any]) -> None:
         payload_fields = self._parse_payload(payload)
         fields = kwargs.copy()
-        del fields['singulars']
-        del fields['aggregates']
+        fields.pop('singulars', None)
+        fields.pop('aggregates', None)
         fields.update(payload_fields)
 
         super().__init__(**fields)
@@ -180,7 +180,7 @@ class UnknownEvent(MetricEvent):
     payload_data = Column(LargeBinary, nullable=False)
 
     def _parse_payload(self, maybe_payload: GLib.Variant) -> Dict[str, Any]:
-        return {'payload_data': maybe_payload.get_data_as_bytes()}
+        return {'payload_data': maybe_payload.get_data_as_bytes().get_data()}
 
 
 class InvalidEvent(UnknownEvent):
